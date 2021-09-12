@@ -1,0 +1,300 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='921' preserveAspectRatio='none' viewBox='0 0 2000 921'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1061%26quot%3b)' fill='none'%3e%3crect width='2000' height='921' x='0' y='0' fill='rgba(208%2c 209%2c 211%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c632.699C116.807%2c613.737%2c215.529%2c552.773%2c321.829%2c500.775C443.545%2c441.236%2c586.146%2c412.761%2c668.923%2c305.487C760.169%2c187.237%2c827.605%2c31.575%2c796.626%2c-114.538C765.921%2c-259.358%2c620.378%2c-343.17%2c510.388%2c-442.254C413.413%2c-529.614%2c322.38%2c-639.188%2c193.236%2c-658.101C68.319%2c-676.395%2c-34.081%2c-560.911%2c-158.626%2c-540.232C-308.956%2c-515.271%2c-479.63%2c-610.087%2c-606.285%2c-525.349C-734.199%2c-439.769%2c-788.727%2c-268.099%2c-795.203%2c-114.333C-801.435%2c33.628%2c-711.547%2c162.549%2c-640.734%2c292.614C-574.649%2c413.994%2c-518.873%2c552.638%2c-396.799%2c617.432C-277.466%2c680.771%2c-133.355%2c654.347%2c0%2c632.699' fill='%2384878c'%3e%3c/path%3e%3cpath d='M2000 1609.363C2125.162 1582.83 2189.809 1449.446 2283.883 1362.731 2359.798 1292.754 2436.576 1231.011 2499.369 1149.054 2578.967 1045.163 2715.004 950.388 2699.365 820.447 2683.791 691.046 2524.404 637.693 2427.355 550.6949999999999 2343.729 475.73 2276.422 378.188 2169.1 345.097 2061.142 311.80999999999995 1943.354 328.414 1837.902 368.946 1737.505 407.53499999999997 1674.068 498.084 1591.557 567.082 1490.4769999999999 651.608 1339.1390000000001 694.823 1298.366 820.12 1257.154 946.764 1327.237 1081.859 1384.992 1201.865 1441.845 1319.996 1517.28 1429.66 1626.567 1502.0729999999999 1736.763 1575.088 1870.683 1636.777 2000 1609.363' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1061'%3e%3crect width='2000' height='921' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+}
+
+body #container {
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+body #container #calculator {
+  height: 65vh;
+  width: 45vh;
+  border: 3px solid #D0D1D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-radius: 20px;
+}
+
+body #container #calculator #result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 62%;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+body #container #calculator #showNumbers {
+  width: 100%;
+  height: 14%;
+  background-color: white;
+  border-top: 1.5px solid #D0D1D3;
+  border-bottom: 1.5px solid #D0D1D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body #container #calculator #showNumbers #span {
+  font-size: 12px;
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-self: flex-end;
+  text-align: center;
+  display: none;
+}
+
+body #container #calculator #buttons {
+  width: 95%;
+  height: 33%;
+  gap: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "si o n plus c e ", "cua cin se menos cua raiz ", "u d t mul p p ", "cero co por div i i ";
+  padding: 5px;
+}
+
+body #container #calculator #buttons button {
+  background-color: #EAECEE;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body #container #calculator #buttons button:hover {
+  background-color: #787A7A;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: white;
+}
+
+body #container #calculator #buttons #escape {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: 2/5;
+}
+
+body #container #calculator #buttons #undo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: 1/5;
+}
+
+body #container #calculator #buttons #cero {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+body #container #calculator #buttons #uno {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: 3/1;
+}
+
+body #container #calculator #buttons #dos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: 3/2;
+}
+
+body #container #calculator #buttons #tres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: 3/3;
+}
+
+body #container #calculator #buttons #cuatro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2/1;
+}
+
+body #container #calculator #buttons #cinco {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2/2;
+}
+
+body #container #calculator #buttons #seis {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: 2/3;
+}
+
+body #container #calculator #buttons #siete {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1;
+}
+
+body #container #calculator #buttons #ocho {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+}
+
+body #container #calculator #buttons #nueve {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1/3;
+}
+
+body #container #calculator #buttons #coma {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: 4/3;
+}
+
+body #container #calculator #buttons #plus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: 1/4;
+}
+
+body #container #calculator #buttons #menos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: 2/4;
+}
+
+body #container #calculator #buttons #dividir {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: 3/4;
+}
+
+body #container #calculator #buttons #mult {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: 4/4;
+}
+
+body #container #calculator #buttons #igual {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+  width: 80px;
+}
+
+body footer div svg {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+body footer div svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=main.css.map */
