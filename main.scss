@@ -42,7 +42,15 @@ body {
                 background-color: white;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-              
+              div {
+                  #resultPara {
+                      margin-right: 20px;
+                  }
+                  p{
+                     margin-left: 10px;
+
+                  }
+              }
             }
             #showNumbers {
                 width: 100%;
@@ -55,14 +63,13 @@ body {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                #span {
+                #error {
                     font-size: 12px;
                     color: red;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     justify-self: flex-end;
                     text-align: center;
                     display:none;
-                    
                 }
             }
             #buttons {
@@ -72,11 +79,7 @@ body {
                 display: grid;
                 grid-template-columns: repeat(5,1fr);
                 grid-template-rows: repeat(4,1fr);
-                grid-template-areas: 
-                    "si o n plus c e ",
-                    "cua cin se menos cua raiz ",
-                    "u d t mul p p ",
-                    "cero co por div i i ";
+              
                 padding: 5px;
                 button {
                     background-color: #EAECEE;
